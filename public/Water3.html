@@ -1,0 +1,756 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ include file="../../../framework/include/pageset.jspa"%>
+<!DOCTYPE html>
+<html style="height: 100%;width: 100%">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title></title>
+	<link
+	href="css/point.css" rel="stylesheet" type="text/css">
+	<!-- 思源黑体 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+	
+<style type="text/css">
+*{margin: 0px; padding: 0px;font-size: 0.9vw;}
+	
+table tr td{
+	border: 1px solid white;
+}
+
+html{
+	width:100%;
+	height:100%;
+}
+body{
+	width:1680px;
+	height:867px;
+	background-repeat: no-repeat; 
+	background-size:100%;
+}
+.box{
+	width:1680px;
+	height:867px;
+	background-size:100% 100%;
+	background-repeat: no-repeat; 
+	
+}
+ div{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+}
+.box .box-div{
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat; 
+	background-size:100% 100%;
+	position: relative;
+}
+.box-div div{
+	position: absolute;
+	width: 203.6px;
+	height: 138px;
+	color: #43e5b9;
+}
+.box button {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	left: 1560px;
+	top: 50px;
+	background-color: transparent;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.box button:hover{
+	border: 1px solid white;
+}
+.tableClass{
+ 	width:100%;
+ 	height:100%;
+ 	text-align:center;
+ 	border-collapse: collapse;
+ 	background-image: radial-gradient(#07235baa, #00021e);
+}
+.tdClass{
+	width:48.3%;
+	color:white;
+	text-align:center;
+}
+.tdClass1{
+	width:52.3%;
+	color:#43e5b9;
+	text-align:center;
+}
+.tabTitle{
+	font-family: "Noto Sans SC";
+    font-weight: 100;
+    font-size: 17px;
+    height: 25px;
+    text-align:center;
+}
+			
+#title{
+	position: absolute;
+	top: 23px;
+	left: 589px;
+	font-family: "Noto Sans SC";
+	font-weight: 100;
+	color: white;
+	font-size: 38px;
+	width: 40%;
+}		
+			
+	.div1{
+		/* border:1px solid red; */
+		position: absolute !important;
+		top: 11.8%;
+		left: 13.5%;
+	}
+	.div2{
+		/* border:1px solid red; */
+		top: 36.9%;
+		left: 13.5%;
+		height: 101px !important;
+	}
+			
+	.div3{
+		/* border:1px solid red; */
+		position: absolute;
+	   top: 54.9%;
+	   left: 13.4%;
+	}
+			
+	.div4{
+		/* border:1px solid red; */
+		position: absolute;
+		top: 85.7%;
+		left: 20%;
+		height: 98px !important;
+	}
+	.div5{
+		/* border:1px solid red; */
+		position: absolute;
+		top: 9.6%;
+		left: 60.5%;
+		height: 174px !important;
+	}
+	.div6{
+		/* border:1px solid red; */
+		position: absolute;
+		top: 32.3%;
+		left: 60.5%;
+		height: 174px !important;
+	}
+	.div7{
+		/* border:1px solid red; */
+		position: absolute;
+		top: 54.3%;
+		left: 60.5%;
+		height: 179px !important;
+	}
+	.div8{
+		/* border:1px solid red; */
+		position: absolute;
+		top: 77.3%;
+		left: 60.5%;
+		height: 176px !important;
+	}
+			
+	.div9{
+		/* border:1px solid red; */
+		position: absolute;
+		top: 58.5%;
+		left: 78.8%;
+		height: 98px !important;
+	}
+	.div10{
+		/* border:1px solid red; */
+		position: absolute;
+		top: 72.8%;
+		left: 78.8%;
+		height: 98px !important;
+	}
+
+	#moveTip1 {
+		top:816px;
+		left:239px;
+		transform:rotate(270deg);
+		-ms-transform:rotate(270deg); /* Internet Explorer */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+	}
+
+	#moveTip2 {
+		top:816px;
+		left:640px;
+		transform:rotate(90deg);
+		-ms-transform:rotate(90deg); /* Internet Explorer */
+		-moz-transform:rotate(90deg); /* Firefox */
+		-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+		-o-transform:rotate(90deg); /* Opera */
+	}
+	
+	#moveTip3 {
+		top:824px;
+		left:646px;
+		position:absolute
+	}
+
+	#moveTip4 {
+		top:822px;
+		left:802px;
+		transform:rotate(270deg);
+		-ms-transform:rotate(270deg); /* Internet Explorer */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+	}	
+	#moveTip5 {
+		top:822px;
+		left:684px;
+		transform:rotate(270deg);
+		-ms-transform:rotate(270deg); /* Internet Explorer */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+	}	
+	#moveTip6 {
+		top:597px;
+		left:686px;
+		position:absolute
+	}	
+	#moveTip7 {
+		top:423px;
+		left:686px;
+		position:absolute
+	}	
+
+	#moveTip8 {
+		top:248px;
+		left:692px;
+		position:absolute
+	}	
+	#moveTip9 {
+		top:679px;
+		left:827px;
+		position:absolute
+	}	
+
+	#moveTip10 {
+		top:500px;
+		left:827px;
+		position:absolute
+	}	
+
+	#moveTip11 {
+		top:324px;
+		left:827px;
+		position:absolute
+	}	
+
+	#moveTip12 {
+		top:145px;
+		left:827px;
+		position:absolute
+	}	
+
+	#moveTip13 {
+		top:669px;
+		left:1269px;
+		position:absolute;
+		transform:rotate(270deg);
+		-ms-transform:rotate(270deg); /* Internet Explorer */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+	}	
+	
+	#moveTip14 {
+		top:489px;
+		left:1269px;
+		position:absolute;
+		transform:rotate(270deg);
+		-ms-transform:rotate(270deg); /* Internet Explorer */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+	}
+	
+	#moveTip15 {
+		top:155px;
+		left:1269px;
+		position:absolute;
+		transform:rotate(90deg);
+		-ms-transform:rotate(90deg); /* Internet Explorer */
+		-moz-transform:rotate(90deg); /* Firefox */
+		-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+		-o-transform:rotate(90deg); /* Opera */
+	}
+	
+	
+	#moveTip16 {
+		top:335px;
+		left:1269px;
+		position:absolute;
+		transform:rotate(90deg);
+		-ms-transform:rotate(90deg); /* Internet Explorer */
+		-moz-transform:rotate(90deg); /* Firefox */
+		-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+		-o-transform:rotate(90deg); /* Opera */
+	}	
+	#moveTip17 {
+		top:454px;
+		left:1280px;
+		position:absolute
+	}	
+	
+	#moveTip18 {
+		top:454px;
+		left:1269px;
+		position:absolute
+	}
+
+	.top {
+		transform:rotate(270deg);
+		-ms-transform:rotate(270deg); /* Internet Explorer */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+	}
+	
+	.right {
+		transform:rotate(180deg);
+		-ms-transform:rotate(180deg); /* Internet Explorer */
+		-moz-transform:rotate(180deg); /* Firefox */
+		-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+		-o-transform:rotate(180deg); /* Opera */
+	}
+	
+	.show {
+		opacity:0.2;
+	}
+	.div0{
+		position: absolute;
+	    top: 23px;
+	    left: 591px;
+	    font-family: "Noto Sans SC";
+	    font-weight: 100;
+	    color: white;
+	    font-size: 38px;
+	}
+
+
+#Uls li{
+	width: 30px;
+	height: 30px;
+	list-style: none;
+	position: absolute;
+} 
+.point1{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-1 10s infinite;
+}
+@keyframes mymove01-1 {
+	  0% {top:95.2%; left:10%; transform: rotate(0deg);}
+	  50%{top:95.2%; left:14%; transform: rotate(0deg);}
+	  51%{top:95.2%; left:14%; transform: rotate(270deg)}
+	100% {top:85.2%; left:14%; transform: rotate(270deg);}
+}
+
+.point2{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-2 10s infinite;
+}
+@keyframes mymove01-2 {
+	  0% {top:95.2%; left:39%; transform: rotate(0deg);}
+	80% {top:95.2%; left:47.5%; transform: rotate(0deg);}
+	81% {top:90.2%; left:47.5%; transform: rotate(270deg);}
+	100% {top:90.2%; left:47.5%; transform: rotate(270deg);}
+}
+
+.point3{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-3 10s infinite;
+}
+@keyframes mymove01-3 {
+	  0% {top:95.2%; left:39%; transform: rotate(0deg);}
+	5% {top:95.2%; left:40.5%; transform: rotate(0deg);}
+	6% {top:95.2%; left:40.5%; transform: rotate(270deg);}
+	70% {top:68.8%; left:40.5%; transform: rotate(270deg);}
+	71% {top:68.8%; left:40.5%; transform: rotate(0deg);}
+	100% {top:68.8%; left:47.5%; transform: rotate(0deg);}
+}
+
+.point4{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-4 10s infinite;
+}
+@keyframes mymove01-4 {
+	  0% {top:95.2%; left:39%; transform: rotate(0deg);}
+	5% {top:95.2%; left:40.5%; transform: rotate(0deg);}
+	6% {top:95.2%; left:40.5%; transform: rotate(270deg);}
+	70% {top:48.5%; left:40.5%; transform: rotate(270deg);}
+	71% {top:48.5%; left:40.5%; transform: rotate(0deg);}
+	100% {top:48.5%; left:47.5%; transform: rotate(0deg);}
+}
+
+.point5{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-5 10s infinite;
+}
+@keyframes mymove01-5 {
+	  0% {top:95.2%; left:39%; transform: rotate(0deg);}
+	5% {top:95.2%; left:40.5%; transform: rotate(0deg);}
+	6% {top:95.2%; left:40.5%; transform: rotate(270deg);}
+	70% {top:28.5%; left:40.5%; transform: rotate(270deg);}
+	71% {top:28.5%; left:40.5%; transform: rotate(0deg);}
+	100% {top:28.5%; left:47.5%; transform: rotate(0deg);}
+}
+
+.point6{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-6 10s infinite;
+}
+@keyframes mymove01-6 {
+	0% {top:16.5%; left:49.5%; transform: rotate(0deg);}
+	50% {top:16.5%; left:75.5%; transform: rotate(0deg);}
+	51% {top:16.5%; left:75.5%; transform: rotate(90deg);}
+	98% {top:52.5%; left:75.5%; transform: rotate(90deg);}
+	99% {top:52.5%; left:75.5%; transform: rotate(0deg);}
+	100% {top:52.5%; left:77.5%; transform: rotate(0deg);}
+}
+
+.point7{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-7 10s infinite;
+}
+@keyframes mymove01-7 {
+	0% {top:37.5%; left:49.5%; transform: rotate(0deg);}
+	50% {top:37.5%; left:75.5%; transform: rotate(0deg);}
+	51% {top:37.5%; left:75.5%; transform: rotate(90deg);}
+	98% {top:52.5%; left:75.5%; transform: rotate(90deg);}
+	99% {top:52.5%; left:75.5%; transform: rotate(0deg);}
+	100% {top:52.5%; left:77.5%; transform: rotate(0deg);}
+}
+
+.point8{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-8 10s infinite;
+}
+@keyframes mymove01-8 {
+	0% {top:57.5%; left:49.5%; transform: rotate(0deg);}
+	50% {top:57.5%; left:75.5%; transform: rotate(0deg);}
+	51% {top:57.5%; left:75.7%; transform: rotate(270deg);}
+	98% {top:52.5%; left:75.7%; transform: rotate(270deg);}
+	99% {top:52.5%; left:75.7%; transform: rotate(0deg);}
+	100% {top:52.5%; left:77.5%; transform: rotate(0deg);}	
+}
+
+
+.point9{
+	background: url('images/jiantou1.png') no-repeat;
+	animation: mymove01-9 10s infinite;
+}
+@keyframes mymove01-9 {
+	0% {top:78.5%; left:49.5%; transform: rotate(0deg);}
+	50% {top:78.5%; left:75.7%; transform: rotate(0deg);}
+	51% {top:78.5%; left:75.7%; transform: rotate(270deg);}
+	98% {top:52.5%; left:75.7%; transform: rotate(270deg);}
+	99% {top:52.5%; left:75.7%; transform: rotate(0deg);}
+	100% {top:52.5%; left:77.5%; transform: rotate(0deg);}	
+}
+
+
+.point10{
+	background: url('images/jiantou2.png') no-repeat;
+	animation: mymove01-10 10s infinite;
+}
+@keyframes mymove01-10 {
+	0% {top:52.5%; left:91.5%; transform: rotate(0deg);}
+	3% {top:52.5%; left:93.5%; transform: rotate(0deg);}
+	4% {top:52.5%; left:93.5%; transform: rotate(270deg);}
+	11%{top:42.5%; left:93.5%; transform: rotate(270deg);}
+	12%{top:42.5%; left:93.5%; transform: rotate(180deg);}
+	20%{top:42.5%; left:87.5%; transform: rotate(180deg);}
+	21%{top:42.5%; left:87.5%; transform: rotate(270deg);}
+	60%{top:9%; left:87.5%; transform: rotate(270deg);}
+	61%{top:9%; left:87.5%; transform: rotate(180deg);}
+	100% {top:9%; left:12%; transform: rotate(180deg);}	
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<hy:view>
+	<div class="box">
+	<img src="sucai/water3.png" width="100%" height="100%"
+				style="position: absolute; left: 0; top: 0;">
+		<ul id="Uls">
+				<li class="box_01-0"></li>
+				<li class="point1"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point2"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point3"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point4"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point5"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point6"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point7"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point8"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point9"><img src="sucai/jiantou1.png" alt="" id="jin1"></li>
+				<li class="point10"><img src="sucai/jiantou2.png" alt="" id="jin1"></li>
+			</ul>
+		<div class="box-div">
+		<div id="title">硝酸车间 (1#2#镁尾水循环泵)</div>
+			<div class="div1">
+				<table  class="tableClass">
+					<tr>
+						<td class ="tdClass tabTitle" colspan="2">入口总管参数</td>
+					</tr>
+					<tr>
+						<td class="tdClass">流量(m³/h)</td>
+						<td class="tdClass1" id="div1_SV"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">温度(℃)</td>
+						<td class="tdClass1" id="div1_T"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">压力(kPa)</td>
+						<td class="tdClass1" id="div1_Pa"></td>
+					</tr>
+				</table>
+			</div>
+			<!-- <div class="div2" >
+				<table  class="tableClass">
+						<tr>
+					    	<td class ="tdClass tabTitle" colspan="2">设备进口</td>
+					  	</tr>
+						<tr>
+					    	<td class ="tdClass">温度(℃)</td>
+					    	<td class ="tdClass1" id="div2_T"></td>
+					    </tr>
+					  	<tr>
+					    	<td class ="tdClass">压力(kPa)</td>
+					    	<td class ="tdClass1" id="div2_Pa"></td>
+					  	</tr>
+				 	 </table>
+			</div> -->
+			<div class="div3" >
+				<table class="tableClass">
+						<tr>
+					    	<td class ="tdClass tabTitle" colspan="2">出口总管参数</td>
+					  	</tr>
+						<tr>
+					    	<td class ="tdClass">流量(m³/h)</td>
+					    	<td class ="tdClass1" id="div3_SV"></td>
+					  	</tr>
+					  	<tr>
+					    	<td class ="tdClass">温度(℃)</td>
+					    	<td class ="tdClass1" id="div3_T"></td>
+					  	</tr>
+					  	<tr>
+					    	<td class ="tdClass">压力(kPa)</td>
+					    	<td class ="tdClass1" id="div3_Pa"></td>
+					  	</tr>
+				 	 </table>
+			</div>
+			<div class="div4">
+				<table class="tableClass" style="height: 60px">
+						<tr>
+					    	<td class ="tdClass tabTitle" colspan="2">设备进口</td>
+					  	</tr>
+						<tr>
+					    	<td class ="tdClass">温度(℃)</td>
+					    	<td class ="tdClass1" id="div4_T"></td>
+					    
+					  	</tr>
+					  
+				 	 </table>
+			</div>
+			<div class="div5" >
+				<table class="tableClass">
+						<tr>
+					    	<td class ="tdClass tabTitle" colspan="2">1#水泵</td>
+					  	</tr>
+						<tr>
+					    	<td class ="tdClass">频率(Hz)</td>
+					    	<td class ="tdClass1" id="div5_F"></td>
+					  	</tr>
+					  	<tr>
+					    	<td class ="tdClass">功率(kW)</td>
+					    	<td class ="tdClass1" id="div5_P"></td>
+					  	</tr>
+					  	<tr>
+					    	<td class ="tdClass">电流(A)</td>
+					    	<td class ="tdClass1" id="div5_Ia"></td>
+					  	</tr>
+						<tr>
+					    	<td class ="tdClass">压力(kPa)</td>
+					    	<td class ="tdClass1" id="div5_Pa"></td>
+					  	</tr>
+				 	 </table>
+			</div>
+			<div class="div6">
+				<table class="tableClass">
+					<tr>
+						<td class="tdClass tabTitle" colspan="2">2#水泵</td>
+					</tr>
+					<tr>
+						<td class="tdClass">频率(Hz)</td>
+						<td class="tdClass1" id="div6_F"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">功率(kW)</td>
+						<td class="tdClass1" id="div6_P"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">电流(A)</td>
+						<td class="tdClass1" id="div6_Ia"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">压力(kPa)</td>
+						<td class="tdClass1" id="div6_Pa"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="div7">
+				<table class="tableClass">
+					<tr>
+						<td class="tdClass tabTitle" colspan="2">3#水泵</td>
+					</tr>
+					<tr>
+						<td class="tdClass">频率(Hz)</td>
+						<td class="tdClass1" id="div7_F"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">功率(kW)</td>
+						<td class="tdClass1" id="div7_P"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">电流(A)</td>
+						<td class="tdClass1" id="div7_Ia"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">压力(kPa)</td>
+						<td class="tdClass1" id="div7_Pa"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="div8">
+				<table class="tableClass">
+					<tr>
+						<td class="tdClass tabTitle" colspan="2">4#水泵</td>
+					</tr>
+					<tr>
+						<td class="tdClass">频率(Hz)</td>
+						<td class="tdClass1" id="div8_F"></td>
+
+					</tr>
+
+					<tr>
+						<td class="tdClass">功率(kW)</td>
+						<td class="tdClass1" id="div8_P"></td>
+					</tr>
+
+					<tr>
+						<td class="tdClass">电流(A)</td>
+						<td class="tdClass1" id="div8_Ia"></td>
+					</tr>
+
+					<tr>
+						<td class="tdClass">压力(kPa)</td>
+						<td class="tdClass1" id="div8_Pa"></td>
+					</tr>
+
+				</table>
+			</div>
+			<div class="div9">
+				<table class="tableClass">
+					<tr>
+						<td class="tdClass tabTitle" colspan="2">设备进口</td>
+					</tr>
+					<tr>
+						<td class="tdClass">温度(℃)</td>
+						<td class="tdClass1" id="div9_T"></td>
+					</tr>
+					<tr>
+						<td class="tdClass">压力(MPa)</td>
+						<td class="tdClass1" id="div9_Pa"></td>
+					</tr>
+				</table>
+			</div>
+			<!-- <div class="div10" >
+			<table class="tableClass">
+				<tr>
+			    	<td class ="tdClass tabTitle" colspan="2">设备出口</td>
+			  	</tr>
+				<tr>
+			    	<td class ="tdClass">温度(℃)</td>
+			    	<td class ="tdClass1" id="div10_T"></td>
+			  	</tr>
+			  	<tr>
+			    	<td class ="tdClass">压力(MPa)</td>
+			    	<td class ="tdClass1" id="div10_Pa"></td>
+			  	</tr>
+		 	 </table>
+			</div> -->
+		</div>
+	</div>
+</hy:view>
+</body>
+<script type="text/javascript"> 
+	function ajax_init(response) {
+		menuId = response.getParameter("menuId");
+		var dataMap = response.getParameter("dataMap");
+		var arr = Object.keys(dataMap);
+		for(var i=0;i<arr.length;i++){
+			$("#"+arr[i]).html(dataMap[arr[i]]);
+		}
+	}
+	function successFun(response) {
+		var response = eval('(' + response + ')');
+		menuId = response.parameters.menuId;
+		var dataMap = response.parameters.dataMap;
+		var arr = Object.keys(dataMap);
+		for(var i=0;i<arr.length;i++){
+			$("#"+arr[i]).html(dataMap[arr[i]]);
+		}
+	}
+	setInterval(function(){
+		$.ajax({
+			url : "Water3.do?action=retrieve&menuId="+menuId,
+			type : "POT",
+			datatype : "json",
+			async : true,
+			success : successFun
+		});
+	},8000);
+	//全屏铺满
+	var ratioX = $(window).width() / 1680;
+	var ratioY = $(window).height() / 866;
+
+	$(".box").css({
+		transform : "scale(" + ratioX + "," + ratioY + ")",
+		transformOrigin : "left top",
+		backgroundSize : "100% 100%",
+	});
+
+	//调整浏览器窗口全屏铺满
+	$(window, document).resize(function() {
+		var ratioX = $(window).width() / 1680;
+		var ratioY = $(window).height() / 866;
+		$(".box").css({
+			transform : "scale(" + ratioX + "," + ratioY + ")",
+			transformOrigin : "left top",
+			backgroundSize : "100% 100%"
+		});
+	});
+
+
+</script> 
+</html>
